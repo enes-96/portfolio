@@ -23,19 +23,19 @@ export default function Navbar() {
   }
 
   return (
-    <header className="text-xl w-2/4 m-auto">
-      <ul className="px-2 py-2 flex w-2/4 rounded-full items-center justify-between bg-zinc-900 text-zinc-500 fixed top-8 mx-auto cursor-default">
+    <header className="text-3xl w-3/4 m-auto ">
+      <ul className="px-2 py-2 flex w-3/4 rounded-full items-center justify-between bg-zinc-900 text-zinc-500 fixed top-8 mx-auto cursor-default">
         {NAVBAR_ITEMS.map((item) => (
           <li
             key={item.id}
             onClick={() => handleItemClick(item.id)}
             onMouseEnter={() => handleMouseEnter(item.id)}
             onMouseLeave={handleMouseLeave}
-            className={`rounded-full py-2 px-8 relative ${
+            className={`rounded-full py-4 px-8 relative ${
               selectedItemId === item.id
-                ? "bg-zinc-700 text-white transition-all duration-300"
+                ? "bg-zinc-700 text-white transition-all duration-600"
                 : isMouseEnter === item.id
-                ? "text-white transition-all duration-300"
+                ? "text-white transition-all duration-600"
                 : "focus:bg-zinc-800"
             }`}
           >

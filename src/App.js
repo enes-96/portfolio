@@ -7,7 +7,7 @@ function App() {
     <div className="App h-screen text-white">
       <Navbar />
       <HeroHeader />
-      <Cursor h={5} w={5} />
+      <Cursor />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-export default function Cursor({ h, w }) {
+export default function Cursor() {
   const TrailerRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Cursor({ h, w }) {
       <div
         ref={TrailerRef}
         id="trailer"
-        className={`h-${h} w-${w} bg-white rounded-full fixed z-50 pointer-events-none opacity-100`}
+        className={`h-5 w-5 bg-white rounded-full z-50 pointer-events-none opacity-100 absolute`}
       ></div>
     </div>
   );
