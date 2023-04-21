@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <header className="text-3xl w-3/4 m-auto ">
-      <ul className="px-2 py-2 flex w-3/4 rounded-full items-center justify-between bg-zinc-900 text-zinc-500 fixed top-8 mx-auto cursor-default">
+      <ul className="px-2 py-2 flex w-3/4 rounded-full items-center justify-between bg-zinc-900 text-zinc-500 mx-auto cursor-default">
         {NAVBAR_ITEMS.map((item) => (
           <li
             key={item.id}
