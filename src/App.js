@@ -5,9 +5,9 @@ import HeroHeader from "./components/HeroHeader";
 function App() {
   return (
     <div className="App h-screen text-white">
+      <Cursor />
       <Navbar />
       <HeroHeader />
-      <Cursor />
     </div>
   );
 }
