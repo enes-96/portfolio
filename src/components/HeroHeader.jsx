@@ -4,7 +4,7 @@ import catImage from "./images/cat.jpg";
 function HeroHeader() {
   return (
     <div>
-      <h2 className="text-4xl text-center overflow-hidden my-0 mx-auto whitespace-nowrap border-r-4 border-r-white typewriter">
+      <h2 className="text-4xl text-center overflow-hidden my-0 mx-auto whitespace-nowrap border-r-4 border-r-white">
         Front End Developer
       </h2>
       <div className="grid place-items-center">
@@ -15,7 +15,7 @@ function HeroHeader() {
       <div className="grid place-items-center">
         <div
           id="img-potrait"
-          className=" rounded-t-full border-8 border-blue-500 grid place-items-center overflow-hidden"
+          className=" rounded-t-full border-8 border-zinc-500 grid place-items-center overflow-hidden"
         >
           <img src={catImage} alt="cat" className="rounded-t-full" />
         </div>

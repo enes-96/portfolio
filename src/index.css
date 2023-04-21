@@ -14,7 +14,7 @@
 }
 /*----------------------------------------*/
 
-.typewriter h2 {
+h2 {
   width: 352px;
   animation: typing 1s steps(20, end), blink-caret 0.75s step-end infinite;
 }
