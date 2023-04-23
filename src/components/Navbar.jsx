@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <header
-      className="text-xl w-3/4 m-auto mb-12  sticky top-4"
+      className="text-xl w-3/4 m-auto mb-12 sticky top-4"
       onMouseMove={handleMouseMove}
     >
       <ul className="px-2 py-2 flex w-3/4 rounded-full items-center justify-between bg-zinc-900 text-zinc-500 mx-auto cursor-default">

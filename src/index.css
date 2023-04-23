@@ -5,6 +5,7 @@
 #root {
   font-family: "Montserrat", sans-serif;
   transition: all;
+  background-color: black;
 }
 ::selection {
   background-color: darkblue;

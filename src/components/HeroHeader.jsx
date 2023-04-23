@@ -34,7 +34,7 @@ function HeroHeader() {
         </div>
       </div>
       <div>
-        <h5>
+        <h5 className="text-4xl  w-3/4 m-auto mb-8 leading-relaxed">
           Winner of the world's most prestigious web design awards in the fields
           of UI, UX, and innovation. With a diverse background in art direction,
           design leadership, website and app UI/UX design, 3D design, and
