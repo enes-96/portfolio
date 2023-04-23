@@ -1,10 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
 #root {
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  font-family: "Montserrat", sans-serif;
+  transition: all;
+}
+::selection {
+  background-color: darkblue;
 }
 .App:hover #trailer {
   opacity: 1;
@@ -13,7 +16,6 @@
   transition: opacity 500ms ease;
 }
 /*----------------------------------------*/
-
 h2 {
   width: 352px;
   animation: typing 1s steps(20, end), blink-caret 0.75s step-end infinite;
@@ -44,3 +46,4 @@ h2 {
   height: 720px;
   width: 520px;
 }
+/*************************************/

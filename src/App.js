@@ -4,7 +4,7 @@ import Cursor from "./components/Cursor";
 import HeroHeader from "./components/HeroHeader";
 function App() {
   return (
-    <div className="App h-screen text-white">
+    <div className="App min-h-screen bg-black text-white">
       <Cursor />
       <Navbar />
       <HeroHeader />
