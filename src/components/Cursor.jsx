@@ -31,7 +31,7 @@ export default function Cursor() {
       <div
         ref={TrailerRef}
         id="trailer"
-        className={`h-5 w-5 bg-white rounded-full pointer-events-none opacity-100 fixed `}
+        className={`h-4 w-4 bg-white rounded-full pointer-events-none opacity-100 fixed `}
       ></div>
     </div>
   );

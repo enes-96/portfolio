@@ -11,8 +11,7 @@ const NAVBAR_ITEMS = [
 export default function Navbar() {
   const [selectedItemId, setSelectedItemId] = useState("");
   const [isMouseEnter, setIsMouseEnter] = useState("");
-  const [hoveredItemOffsetX, setHoveredItemOffsetX] = useState(0);
-  const [hoveredItemOffsetY, setHoveredItemOffsetY] = useState(0);
+  const [hoveredItemOffset, setHoveredItemOffset] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
 
   function handleItemClick(itemId) {
@@ -30,10 +29,15 @@ export default function Navbar() {
 
   function handleMouseMove(e) {
     if (isHovered) {
-      const posX = e.clientX / 20;
-      const posY = e.clientY / 20;
-      setHoveredItemOffsetX(posX);
-      setHoveredItemOffsetY(posY);
+      const hoveredItem = e.target.closest("li");
+      if (hoveredItem) {
+        const hoveredItemRect = hoveredItem.getBoundingClientRect();
+        const centerX = hoveredItemRect.left + hoveredItemRect.width / 2;
+        const centerY = hoveredItemRect.top + hoveredItemRect.height / 2;
+        const offsetX = e.clientX - centerX + 10;
+        const offsetY = e.clientY - centerY + 10;
+        setHoveredItemOffset({ x: offsetX, y: offsetY });
+      }
     }
   }
 
@@ -53,14 +57,14 @@ export default function Navbar() {
           const isMouseOver = isMouseEnter === item.id;
           const isHoveredItem = isMouseOver && isHovered;
 
-          const transitionDelay = isHoveredItem ? 0 : 1000;
-          const transitionDuration = isHoveredItem ? "0.3s" : "1s";
+          const transitionDelay = isHoveredItem ? 0 : 200;
+          const transitionDuration = isHoveredItem ? "0.4s" : "0.2s";
 
           const styles = {
             transform: `translate(${
-              isHoveredItem ? hoveredItemOffsetX : 0
-            }px, ${isHoveredItem ? hoveredItemOffsetY : 0}px)`,
-            transition: `transform ${transitionDuration} ease-in-out ${transitionDelay}ms`,
+              isHoveredItem ? hoveredItemOffset.x : 0
+            }px, ${isHoveredItem ? hoveredItemOffset.y : 0}px)`,
+            transition: `transform ${transitionDuration} ease ${transitionDelay}ms`,
           };
 
           return (
@@ -71,7 +75,7 @@ export default function Navbar() {
               onMouseLeave={handleMouseLeave}
               onMouseOver={handleItemHoverEnter}
               onMouseOut={handleItemHoverLeave}
-              className={`rounded-full py-4 px-8 relative ${
+              className={`rounded-full py-4 px-8 relative  ${
                 isSelected
                   ? "bg-zinc-700 text-white transition-all duration-600"
                   : isMouseOver || isHoveredItem
@@ -80,7 +84,7 @@ export default function Navbar() {
               }`}
               style={styles}
             >
-              {item.label}
+              <a href={item.link}>{item.label}</a>
             </li>
           );
         })}
