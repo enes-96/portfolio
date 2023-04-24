@@ -2,10 +2,8 @@ import React, { useState } from "react";
 
 const NAVBAR_ITEMS = [
   { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "work", label: "Work" },
-  { id: "contact", label: "Contact" },
   { id: "skill", label: "Skill" },
+  { id: "contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -16,6 +14,11 @@ export default function Navbar() {
 
   function handleItemClick(itemId) {
     setSelectedItemId(itemId);
+
+    if (itemId === "about") {
+      const aboutSection = document.getElementById("about");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   function handleMouseEnter(item) {
@@ -51,10 +54,11 @@ export default function Navbar() {
 
   return (
     <header
-      className="text-xl w-3/4 m-auto mb-12 sticky top-4"
+      className=" z-40 text-xl flex items-center justify-between  mb-12 sticky top-4  w-3/4 m-auto"
       onMouseMove={handleMouseMove}
     >
-      <ul className="px-2 py-2 flex w-3/4 rounded-full items-center justify-between bg-zinc-900 text-zinc-500 mx-auto cursor-default">
+      <h2 className="text-4xl font-bold ">EE.</h2>
+      <ul className=" px-2 py-2 flex rounded-3xl items-center justify-between bg-zinc-900 text-zinc-500 cursor-default overflow-hidden">
         {NAVBAR_ITEMS.map((item) => {
           const isSelected = selectedItemId === item.id;
           const isMouseOver = isMouseEnter === item.id;
@@ -80,7 +84,7 @@ export default function Navbar() {
               onMouseOut={handleItemHoverLeave}
               className={`rounded-full py-4 px-8 relative  ${
                 isSelected
-                  ? "bg-zinc-700 text-white transition-all duration-600"
+                  ? " rounded-3xl bg-zinc-700 text-white transition-all duration-600"
                   : isMouseOver || isHoveredItem
                   ? "text-white transition-all duration-600"
                   : "focus:bg-zinc-800"
