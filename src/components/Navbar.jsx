@@ -18,6 +18,9 @@ export default function Navbar() {
     if (itemId === "about") {
       const aboutSection = document.getElementById("about");
       aboutSection.scrollIntoView({ behavior: "smooth" });
+    } else if (itemId === "skill") {
+      const aboutSection = document.getElementById("skill");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   }
 
