@@ -12,7 +12,7 @@ function HeroHeader() {
   }
 
   return (
-    <section id="about">
+    <section id="about" className="">
       <h2 className="text-3xl text-center overflow-hidden my-0 mx-auto whitespace-nowrap border-r-2 border-r-white mb-4">
         Front End Developer
       </h2>
@@ -25,7 +25,7 @@ function HeroHeader() {
           id="img-potrait"
           className={` grayscale transition-all duration-1000  rounded-t-full border-8 border-zinc-500 grid place-items-center overflow-hidden ${
             isHovered
-              ? "border-white grayscale-0  rounded-b-full rounded-t-none"
+              ? "border-white grayscale-0   rounded-b-full rounded-t-none"
               : ""
           }`}
           onMouseOver={handleImgMouseOver}

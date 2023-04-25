@@ -60,7 +60,9 @@ export default function Navbar() {
       className=" z-40 text-xl flex items-center justify-between  mb-12 sticky top-4  w-3/4 m-auto"
       onMouseMove={handleMouseMove}
     >
-      <h2 className="text-4xl font-bold ">EE.</h2>
+      <h2 className="text-4xl font-bold ">
+        EE<span className="text-blue-800">.</span>
+      </h2>
       <ul className=" px-2 py-2 flex rounded-3xl items-center justify-between bg-zinc-900 text-zinc-500 cursor-default overflow-hidden">
         {NAVBAR_ITEMS.map((item) => {
           const isSelected = selectedItemId === item.id;
@@ -87,7 +89,7 @@ export default function Navbar() {
               onMouseOut={handleItemHoverLeave}
               className={`rounded-full py-4 px-8 relative  ${
                 isSelected
-                  ? " rounded-3xl bg-zinc-700 text-white transition-all duration-600"
+                  ? " rounded-3xl bg-blue-800 text-white transition-all duration-600"
                   : isMouseOver || isHoveredItem
                   ? "text-white transition-all duration-600"
                   : "focus:bg-zinc-800"

@@ -49,9 +49,13 @@ h2 {
   height: 760px;
   width: 560px;
   background-image: url(/src/components/images/cat.jpg);
-  background-size: contain;
-
+  background-position: bottom;
+  background-size: 500px;
+  background-repeat: no-repeat;
   z-index: 1;
   background-attachment: fixed;
 }
 /*************************************/
+#console {
+  font-family: "Space Mono", monospace;
+}
