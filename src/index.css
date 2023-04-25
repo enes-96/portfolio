@@ -59,3 +59,6 @@ h2 {
 #terminal {
   font-family: "Space Mono", monospace;
 }
+#tabs {
+  gap: 1.2px;
+}
