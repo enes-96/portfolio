@@ -13,7 +13,7 @@ import {
 function Skill() {
   return (
     <section id="skill" className=" w-3/4  m-auto ">
-      <h2 className=" text-8xl mb-4">Skill</h2>
+      <h2 className=" text-8xl mb-8">Skill</h2>
       <div id="terminal" className=" bg-gray-800 rounded-3xl p-8 ">
         <div id="dots" className=" flex items-center gap-2 mb-6">
           <div className=" h-5 w-5 bg-red-500 rounded-full" id="dot-red"></div>

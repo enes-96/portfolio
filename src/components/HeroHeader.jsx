@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function HeroHeader() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  function handleImgMouseOver() {
-    setIsHovered(true);
-  }
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 200;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
 
-  function handleImgMouseOut() {
-    setIsHovered(false);
-  }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
 
   return (
     <section id="about" className="">
@@ -20,20 +26,16 @@ function HeroHeader() {
       <h3 className="text-center mb-6 text-xl text-zinc-500">
         Based in Vienna
       </h3>
-      <div className="grid place-items-center mb-8 ">
+      <div className="grid place-items-center mb-10 ">
         <div
           id="img-potrait"
-          className={` grayscale transition-all duration-1000  rounded-t-full border-8 border-zinc-500 grid place-items-center overflow-hidden ${
-            isHovered
-              ? "border-white grayscale-0   rounded-b-full rounded-t-none"
-              : ""
+          className={`bg-green-500  transition-all duration-500   rounded-t-full border-zinc-500 grid place-items-center  ${
+            scrolled ? "bg-red-500" : ""
           }`}
-          onMouseOver={handleImgMouseOver}
-          onMouseOut={handleImgMouseOut}
         ></div>
       </div>
       <div>
-        <h5 className="text-4xl  w-3/4 m-auto mb-8 leading-relaxed">
+        <h5 className="text-4xl  w-3/4 m-auto mb-10 leading-relaxed">
           At 19 years old, I'm a self-taught front-end developer with a passion
           for Web Development. I approach every project with a desire to learn
           and grow, and I'm always exploring new technologies to enhance my

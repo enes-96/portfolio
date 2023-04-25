@@ -46,9 +46,8 @@ h2 {
 /*------------*/
 
 #img-potrait {
-  height: 760px;
-  width: 560px;
-  background-image: url(/src/components/images/cat.jpg);
+  height: 800px;
+  width: 600px;
   background-position: bottom;
   background-size: 500px;
   background-repeat: no-repeat;
