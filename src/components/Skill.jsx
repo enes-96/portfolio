@@ -1,6 +1,7 @@
 import React from "react";
 import { FaReact, FaJsSquare, FaHtml5, FaCss3 } from "react-icons/fa";
-import { SiWebpack, SiJest } from "react-icons/si";
+import { SiWebpack, SiJest, SiTailwindcss } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
 import {
   VscChromeClose,
   VscTerminal,
@@ -11,7 +12,7 @@ import {
 
 function Skill() {
   return (
-    <section id="skill" className=" w-3/4  m-auto h-screen">
+    <section id="skill" className=" w-3/4  m-auto ">
       <h2 className=" text-8xl mb-4">Skill</h2>
       <div id="terminal" className=" bg-gray-800 rounded-3xl p-8 ">
         <div id="dots" className=" flex items-center gap-2 mb-6">
@@ -56,14 +57,22 @@ function Skill() {
             <SiJest className=" text-amber-400 text-md" />
             <p>jest-config.js</p>
           </div>
+          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+            <SiTailwindcss className=" text-cyan-400 text-md" />
+            <p>tailwind-config.js</p>
+          </div>
+          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+            <FaGitAlt className=" text-orange-400 text-md" />
+            <p>.gitignore</p>
+          </div>
         </div>
         <ul id="code" className="pt-2">
-          <li className="mb-4">
+          <li className="mb-4 ">
             <span className="text-red-500">Import</span> Skill
             <span className="text-red-500"> from</span>
             <span className="text-blue-400"> "./enes/skillset"</span>;
           </li>
-          <div className="flex justify-center gap-4 " id="terminal-wrapper">
+          <div className="flex gap-8 " id="terminal-wrapper">
             <div className="" id="left-terminal">
               <li className="mb-4">
                 <p className=" text-blue-400 ">
@@ -182,7 +191,7 @@ function Skill() {
         </ul>
         <div
           id="terminal-console"
-          className="w-full h-32 bg-gray-700 rounded-md"
+          className="w-full bg-gray-700 rounded-md p-2"
         >
           <div
             id="terminal-concole-nav"
@@ -192,7 +201,7 @@ function Skill() {
               <p className="px-2">PROBLEMS</p>
               <p className="px-2">OUTPUT</p>
               <p className="px-2">DEBUG CONSOLE</p>
-              <p className="px-2">TERMINAL</p>
+              <p className="px-2 border-b-2 border-gray-400">TERMINAL</p>
             </div>
             <div className="flex items-center gap-1">
               <VscTerminal className="text-md" />
@@ -203,6 +212,30 @@ function Skill() {
               <VscChromeClose className="text-md" />
             </div>
           </div>
+          <p className="pl-4 ">
+            <span className="text-green-400">enes@eren:</span>
+            <span className="text-blue-400">~/portfolio</span>$
+            <span className="pl-2"> git add .</span>
+          </p>
+          <p className="pl-4 ">
+            <span className="text-green-400">enes@eren:</span>
+            <span className="text-blue-400">~/portfolio</span>$
+            <span className="pl-2"> git commit -m"creating portfolio"</span>
+          </p>
+          <p className="pl-4">
+            <p>[main 345ff234] creating portfolio</p>
+            <p>4 files changed, 125 insertions(+),65 deletions(-)</p>
+          </p>
+          <p className="pl-4 flex">
+            <div>
+              <span className="text-green-400">enes@eren:</span>
+              <span className="text-blue-400">~/portfolio</span>$
+            </div>
+            <div className="flex items-center ">
+              <span className="pl-4"> git push origin main</span>
+              <span className=" w-1 h-4 ml-1 bg-white"></span>
+            </div>
+          </p>
         </div>
       </div>
     </section>

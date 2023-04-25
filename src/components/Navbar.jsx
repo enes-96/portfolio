@@ -60,9 +60,14 @@ export default function Navbar() {
       className=" z-40 text-xl flex items-center justify-between  mb-12 sticky top-4  w-3/4 m-auto"
       onMouseMove={handleMouseMove}
     >
-      <h2 className="text-4xl font-bold ">
-        EE<span className="text-blue-800">.</span>
-      </h2>
+      <div
+        id="logo"
+        className="text-4xl font-bold w-20 h-20 flex justify-center items-center rounded-md"
+      >
+        <h2 className="text-center">
+          EE<span className="text-blue-600">.</span>
+        </h2>
+      </div>
       <ul className=" px-2 py-2 flex rounded-3xl items-center justify-between bg-zinc-900 text-zinc-500 cursor-default overflow-hidden">
         {NAVBAR_ITEMS.map((item) => {
           const isSelected = selectedItemId === item.id;
