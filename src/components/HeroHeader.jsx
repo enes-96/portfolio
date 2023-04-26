@@ -30,7 +30,7 @@ function HeroHeader() {
         <div
           id="img-potrait"
           className={`bg-green-500  transition-all duration-500   rounded-t-full border-zinc-500 grid place-items-center  ${
-            scrolled ? "bg-red-500" : ""
+            scrolled ? "bg-purple-500" : ""
           }`}
         ></div>
       </div>
