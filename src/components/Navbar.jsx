@@ -16,16 +16,8 @@ export default function Navbar() {
   function handleItemClick(itemId) {
     setSelectedItemId(itemId);
 
-    if (itemId === "about") {
-      const aboutSection = document.getElementById("about");
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    } else if (itemId === "skill") {
-      const aboutSection = document.getElementById("skill");
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    } else if (itemId === "contact") {
-      const aboutSection = document.getElementById("contact");
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
+    const section = document.getElementById(itemId);
+    section.scrollIntoView({ behavior: "smooth" });
   }
 
   function handleMouseEnter(item) {
@@ -59,19 +51,36 @@ export default function Navbar() {
     setIsHovered(false);
   }
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 1340;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
+  function handleScroll() {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
 
+    NAVBAR_ITEMS.forEach((item) => {
+      const section = document.getElementById(item.id);
+      if (section) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (
+          scrollPosition >= sectionTop - windowHeight / 2 &&
+          scrollPosition < sectionTop + sectionHeight - windowHeight / 2
+        ) {
+          setSelectedItemId(item.id);
+        }
+      }
+    });
+
+    const isScrolled = scrollPosition > 0;
+    if (isScrolled !== scrolled) {
+      setScrolled(isScrolled);
+    }
+  }
+
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrolled]);
+  });
 
   return (
     <header
