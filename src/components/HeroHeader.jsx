@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { HiMail, HiPhone } from "react-icons/hi";
 const TITLES = [
   "Front End Developer",
   "Javascript Developer",
@@ -36,12 +35,78 @@ const HeroHeader = () => {
       >
         <BsGithub className="" id="hero-git-logo" />
         <BsLinkedin className="" id="hero-lkin-logo" />
+        <svg
+          id="link-icon-shape"
+          width="320"
+          height="30"
+          viewBox="0 0 195 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 11C38.6841 3.33354 101.365 -4.68152 193 10.9998"
+            stroke="url(#paint0_linear_2489_814)"
+            stroke-width="2"
+            stroke-linecap="round"
+          ></path>
+          <defs>
+            <linearGradient
+              id="paint0_linear_2489_814"
+              x1="193"
+              y1="70.14296"
+              x2="2"
+              y2="7.14296"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop
+                offset="0.116017"
+                stop-color="#0073E5"
+                stop-opacity="0"
+              ></stop>
+              <stop offset="1" stop-color="#0073E5"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
       </div>
-      <div id="email-shape" className="absolute text-2xl left-40">
-        <a id="email-link">
-          seyitoffice<span className="">@gmail.com</span>
-        </a>
-      </div>
+      <a
+        href="google.com"
+        id="email-link"
+        className="absolute text-2xl left-40"
+      >
+        seyitoffice@gmail.com
+      </a>
+      <svg
+        id="email-shape"
+        width="320"
+        height="30"
+        viewBox="0 0 195 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 11C38.6841 3.33354 101.365 -4.68152 193 10.9998"
+          stroke="url(#paint0_linear_2489_814)"
+          stroke-width="2 "
+          stroke-linecap="round"
+        ></path>
+        <defs>
+          <linearGradient
+            id="paint0_linear_2489_814"
+            x1="193"
+            y1="70.14296"
+            x2="2"
+            y2="7.14296"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop
+              offset="0.116017"
+              stop-color="#0073E5"
+              stop-opacity="0"
+            ></stop>
+            <stop offset="1" stop-color="#0073E5"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
       <h2 className="text-3xl mb-4 font-medium w-full text-center">
         <Typewriter
           options={{

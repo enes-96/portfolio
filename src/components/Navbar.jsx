@@ -88,7 +88,7 @@ export default function Navbar() {
           EE<span className="text-blue-600">.</span>
         </h2>
       </div>
-      <ul className=" px-2 py-2 flex rounded-3xl items-center justify-between bg-zinc-900 text-zinc-500 cursor-default overflow-hidden ">
+      <ul className=" px-4 py-4 flex rounded-full items-center justify-between bg-zinc-900  text-zinc-500 cursor-default overflow-hidden ">
         {NAVBAR_ITEMS.map((item) => {
           const isSelected = selectedItemId === item.id;
           const isMouseOver = isMouseEnter === item.id;
