@@ -2,6 +2,21 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Works on Firefox */
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  scrollbar-color: black red;
+}
+
+*::-webkit-scrollbar-thumb {
+  scrollbar-color: black red;
+}
+
 #root {
   font-family: "Montserrat", sans-serif;
   transition: all;
@@ -67,7 +82,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  top: 700px;
+  top: 660px;
   right: 240px;
 }
 #hero-lkin-logo {
@@ -82,7 +97,7 @@ h2 {
 }
 #email-shape {
   position: absolute;
-  top: 730px;
+  top: 740px;
   left: 160px;
   transform: rotate(2deg);
 }
