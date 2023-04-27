@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
-
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { HiMail, HiPhone } from "react-icons/hi";
 const TITLES = [
   "Front End Developer",
   "Javascript Developer",
@@ -27,12 +28,20 @@ const HeroHeader = () => {
     setScrolled(window.scrollY > 200);
   };
 
-  const bgImage = scrolled
-    ? "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80"
-    : "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80";
-
   return (
-    <section id="about">
+    <section id="about" className="relative">
+      <div
+        id="link-icon-wrapper-right"
+        className="text-5xl absolute flex gap-6 text-slate-200"
+      >
+        <BsGithub className="" id="hero-git-logo" />
+        <BsLinkedin className="" id="hero-lkin-logo" />
+      </div>
+      <div id="email-shape" className="absolute text-2xl left-40">
+        <a id="email-link">
+          seyitoffice<span className="">@gmail.com</span>
+        </a>
+      </div>
       <h2 className="text-3xl mb-4 font-medium w-full text-center">
         <Typewriter
           options={{
@@ -53,17 +62,17 @@ const HeroHeader = () => {
           className={`overflow-hidden  rounded-t-full relative`}
         >
           <img
-            src={bgImage}
+            src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80"
             alt=""
-            className={`transition-all duration-500 absolute ${
-              scrolled ? " opacity-0 " : ""
+            className={`transition-all duration-1000 absolute ${
+              scrolled ? " opacity-0" : ""
             }`}
           />
           <img
-            src={bgImage}
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
             alt=""
-            className={`transition-all duration-500  absolute ${
-              scrolled ? "" : "opacity-0 "
+            className={`transition-all duration-1000  absolute ${
+              scrolled ? "" : "opacity-0"
             }`}
           />
         </div>

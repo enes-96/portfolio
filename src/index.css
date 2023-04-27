@@ -61,3 +61,16 @@ h2 {
 #tabs {
   gap: 1.2px;
 }
+#link-icon-wrapper-right {
+  height: 100px;
+  width: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  top: 780px;
+  right: 240px;
+}
+#hero-lkin-logo {
+  grid-row: 2 /2;
+  grid-column: 2 / 2;
+}
