@@ -1,5 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 function Contact() {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [userTime, setUserTime] = useState(new Date());
+
+  function handlePhoneCall() {
+    window.open("tel:" + phoneNumber);
+    setPhoneNumber("069181877895");
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setUserTime(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="contact"
@@ -16,24 +32,42 @@ function Contact() {
               you!
             </p>
             <a
-              href="mailto:seyitoffice@gmail.com"
+              href="mailto:enes.devinfo@gmail.com"
               id="email-wrapper"
-              className=" py-10  px-10 text-4xl rounded-full text-right "
+              className=" py-11  px-11 text-5xl rounded-full text-right "
             >
               Click to email me
             </a>
           </div>
         </div>
-        <div className="text-4xl flex text-slate-200 gap-48 my-24">
-          <div className="gap-y-24 grid text-gray-500">
-            <p>+43 681 8187 7895</p>
-            <p>
-              Local Time: <span> 23:34</span>
+        <div className="text-4xl flex text-slate-200  justify-between w-full my-24  ">
+          <div className="gap-y-24 grid text-zinc-600  ">
+            <p onClick={handlePhoneCall}>+43 681 8187 7895</p>
+            <p className="">
+              Local Time:{" "}
+              <span>
+                {userTime.toLocaleTimeString("en-Us", {
+                  timeZone: "Europe/Paris",
+                  hour12: false,
+                })}
+              </span>
             </p>
           </div>
           <div className=" grid-row-2 grid grid-cols-3 gap-y-24 gap-x-24">
-            <a href="linkedin.com">LinkedIn</a>
-            <a href="twitter.com">Twitter</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/enes-eren-3a5489254/"
+            >
+              LinkedIn
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/enes-eren-3a5489254/"
+            >
+              Twitter
+            </a>
             <a href="github.com">GItHub</a>
             <a href="dribble.com">Dribble</a>
             <a href="youtubecom">Youtube</a>

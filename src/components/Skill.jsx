@@ -33,7 +33,7 @@ function Skill() {
           <p className="">Skill.jsx - portfolio - Visual Studio Code</p>
           <div></div>
         </div>
-        <div className="w-full h-6 bg-stone-900 flex gap-4 text-sm items-center px-4 py-3">
+        <div className="w-full h-6 bg-zinc-900  flex gap-4 text-sm items-center px-4 py-3">
           <p>File</p>
           <p>Edit</p>
           <p>Selection</p>

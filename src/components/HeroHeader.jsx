@@ -30,7 +30,7 @@ const HeroHeader = () => {
   };
 
   function handleCopyClipboard() {
-    navigator.clipboard.writeText("seyitoffice@gmail.com");
+    navigator.clipboard.writeText("enes.devinfo@gmail.com");
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   }
@@ -41,8 +41,22 @@ const HeroHeader = () => {
         id="link-icon-wrapper-right"
         className="text-5xl absolute flex gap-6 text-slate-200"
       >
-        <BsGithub className="" id="hero-git-logo" />
-        <BsLinkedin className="" id="hero-lkin-logo" />
+        <a
+          href="https://github.com/enes-96"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="hero-git-logo"
+        >
+          <BsGithub className="" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/enes-eren-3a5489254/"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="hero-lkin-logo"
+        >
+          <BsLinkedin className="" />
+        </a>
         <svg
           id="link-icon-shape"
           width="320"
@@ -80,9 +94,9 @@ const HeroHeader = () => {
       <p
         onClick={handleCopyClipboard}
         id="email-link"
-        className="absolute text-2xl left-40 cursor-default"
+        className={`absolute text-2xl left-40 cursor-default `}
       >
-        {isCopied ? "copied to your clipboard!" : "seyitoffice@gmail.com"}
+        {isCopied ? "copied to your clipboard!" : "enes.devinfo@gmail.com"}
       </p>
 
       <svg

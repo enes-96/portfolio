@@ -47,6 +47,19 @@ h2 {
     width: 352px;
   }
 }
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  cursor: default;
+}
+
+img {
+  -webkit-user-drag: none;
+}
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
@@ -71,7 +84,7 @@ h2 {
 }
 /*************************************/
 #terminal {
-  font-family: "Space Mono", monospace;
+  font-family: "Source Code Pro", monospace;
 }
 #tabs {
   gap: 1.2px;
