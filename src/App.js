@@ -6,7 +6,7 @@ import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 function App() {
   return (
-    <div className="App  text-white scroll ">
+    <div className="App  text-white">
       <Cursor />
       <Navbar />
       <HeroHeader />

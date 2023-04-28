@@ -50,7 +50,7 @@ const HeroHeader = () => {
           <BsGithub className="" />
         </a>
         <a
-          href="https://www.linkedin.com/in/enes-eren-3a5489254/"
+          href="https://www.linkedin.com/in/enes-eren-780373274/"
           target="_blank"
           rel="noopener noreferrer"
           id="hero-lkin-logo"

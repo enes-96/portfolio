@@ -57,21 +57,45 @@ function Contact() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/enes-eren-3a5489254/"
+              href="https://www.linkedin.com/in/enes-eren-780373274/"
             >
               LinkedIn
             </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/enes-eren-3a5489254/"
+              href="https://twitter.com/eneserendev"
             >
               Twitter
             </a>
-            <a href="github.com">GItHub</a>
-            <a href="dribble.com">Dribble</a>
-            <a href="youtubecom">Youtube</a>
-            <a href="cv">CV</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/enes-96"
+            >
+              GitHub
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href=" https://dribbble.com/eneseren"
+            >
+              Dribble
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href=" https://dribbble.com/eneseren"
+            >
+              Blog
+            </a>{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href=" https://dribbble.com/eneseren"
+            >
+              CV
+            </a>{" "}
           </div>
         </div>
       </div>

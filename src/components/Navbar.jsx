@@ -14,10 +14,12 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   function handleItemClick(itemId) {
-    setSelectedItemId(itemId);
-
     const section = document.getElementById(itemId);
-    section.scrollIntoView({ behavior: "smooth" });
+    if (section) {
+      // Wait for the scroll animation to complete before updating selectedItemId
+      setTimeout(() => setSelectedItemId(itemId), 500);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   function handleMouseEnter(item) {
@@ -123,9 +125,9 @@ export default function Navbar() {
               onMouseOut={handleItemHoverLeave}
               className={`rounded-full py-4 px-8 relative  ${
                 isSelected
-                  ? " rounded-3xl bg-blue-800 text-white transition-all duration-600"
+                  ? " rounded-3xl bg-blue-800 text-white "
                   : isMouseOver || isHoveredItem
-                  ? "text-white transition-all duration-600"
+                  ? "text-white "
                   : "focus:bg-zinc-800"
               }`}
               style={styles}
