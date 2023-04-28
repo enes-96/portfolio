@@ -8,19 +8,20 @@ function Contact() {
       <div className=" text-zinc-200 p-10 rounded-3xl grid place-items-center ">
         <div className="  flex justify-between items-center ">
           <h2 className="text-9xl w-1/2 font-semibold ">Contact</h2>
-          <div className="w-1/2 ">
+          <div className="w-1/2 flex flex-col">
             <p className=" text-2xl leading-loose mb-12">
               Let's chat! I'd love to hear from you. Whether you have a project
               in mind or just want to say hello, drop me a message using the
               form below or shoot me an email Looking forward to connecting with
               you!
             </p>
-            <p
+            <a
+              href="mailto:seyitoffice@gmail.com"
               id="email-wrapper"
-              className="bg-black py-8 px-8 text-3xl rounded-full"
+              className=" py-10  px-10 text-4xl rounded-full text-right "
             >
-              seyitoffice@gmail.com
-            </p>
+              Click to email me
+            </a>
           </div>
         </div>
         <div className="text-4xl flex text-slate-200 gap-48 my-24">

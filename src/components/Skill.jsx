@@ -14,66 +14,80 @@ function Skill() {
   return (
     <section id="skill" className=" w-3/4  m-auto ">
       <h2 className=" text-8xl mb-8">Skill</h2>
-      <div id="terminal" className=" bg-zinc-800  rounded-3xl p-8 ">
-        <div id="dots" className=" flex items-center gap-2 mb-6">
-          <div className=" h-5 w-5 bg-red-500 rounded-full" id="dot-red"></div>
-          <div
-            className=" h-5 w-5 bg-yellow-500 rounded-full"
-            id="dot-yellow"
-          ></div>
-          <div
-            className=" h-5 w-5 bg-green-500 rounded-full"
-            id="dot-green"
-          ></div>
+      <div id="terminal" className=" border-2 border-gray-800  rounded-3xl ">
+        <div className="grid grid-cols-3 items-center ">
+          <div id="dots" className=" flex items-center gap-2 m-7 ">
+            <div
+              className=" h-5 w-5 bg-red-500 rounded-full"
+              id="dot-red"
+            ></div>
+            <div
+              className=" h-5 w-5 bg-yellow-500 rounded-full"
+              id="dot-yellow"
+            ></div>
+            <div
+              className=" h-5 w-5 bg-green-500 rounded-full"
+              id="dot-green"
+            ></div>
+          </div>
+          <p className="">Skill.jsx - portfolio - Visual Studio Code</p>
+          <div></div>
         </div>
-        <div
-          id="tabs"
-          className="flex items-center h-10 w-full bg-gray-700 rounded-md "
-        >
-          <div className="h-full bg-gray-600 p-2 flex items-center gap-2 rounded-l-md">
+        <div className="w-full h-6 bg-stone-900 flex gap-4 text-sm items-center px-4 py-3">
+          <p>File</p>
+          <p>Edit</p>
+          <p>Selection</p>
+          <p>View</p>
+          <p>Go</p>
+          <p>Run</p>
+          <p>Terminal</p>
+          <p>Help</p>
+        </div>
+        <div id="tabs" className="flex items-center h-12 w-full bg-slate-800  ">
+          <div className="h-full bg-slate-900 p-4 flex items-center gap-2 rounded-l-md">
             <FaJsSquare className="text-yellow-400 text-md" />
             <p>script.js</p>
           </div>
-          <div className="h-full bg-gray-800 flex items-center gap-3 p-2">
+          <div className="h-full bg-gray-800 flex items-center gap-3 p-4">
             <div className="flex items-center gap-2">
               <FaReact className="text-blue-400 text-md" />
               <p>Skill.jsx</p>
             </div>
             <VscChromeClose />
           </div>
-          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+          <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <FaHtml5 className="text-orange-400 text-md" />
             <p>index.html</p>
           </div>
-          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+          <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <FaCss3 className="text-blue-400 text-md" />
             <p>main.css</p>
           </div>
-          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+          <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <SiWebpack className=" text-sky-400 text-md" />
             <p>webpack-config.js</p>
           </div>
-          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+          <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <SiJest className=" text-amber-400 text-md" />
             <p>jest-config.js</p>
           </div>
-          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+          <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <SiTailwindcss className=" text-cyan-400 text-md" />
             <p>tailwind-config.js</p>
           </div>
-          <div className="h-full bg-gray-600 p-2 flex items-center gap-2">
+          <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <FaGitAlt className=" text-orange-400 text-md" />
             <p>.gitignore</p>
           </div>
         </div>
-        <ul id="code" className="pt-2 ">
-          <li className="mb-4 ">
-            <span className="text-red-500">Import</span> Skill
-            <span className="text-red-500"> from</span>
-            <span className="text-blue-400"> "./enes/skillset"</span>;
-          </li>
-          <div className="flex gap-8 " id="terminal-wrapper">
+        <ul id="code" className="pt-4 p-8 ">
+          <div className="flex gap-8 justify-center" id="terminal-wrapper">
             <div className="" id="left-terminal">
+              <li className="mb-4 ">
+                <span className="text-red-500">Import</span> Skill
+                <span className="text-red-500"> from</span>
+                <span className="text-blue-400"> "./enes/skillset"</span>;
+              </li>
               <li className="mb-4">
                 <p className=" text-blue-400 ">
                   HTML & CSS <span className="text-orange-400">{"{"}</span>
@@ -128,7 +142,10 @@ function Skill() {
                 </p>
               </li>
             </div>
-            <div className="" id="right-terminal">
+            <div
+              className="border-l-2 pl-8 border-gray-800"
+              id="right-terminal"
+            >
               <li className="mb-4">
                 <p className=" text-blue-400 ">
                   GIT & GITHUB <span className="text-orange-400">{"{"}</span>
@@ -191,7 +208,7 @@ function Skill() {
         </ul>
         <div
           id="terminal-console"
-          className="w-full bg-gray-700 rounded-md p-2"
+          className="w-full bg-slate-900 rounded-b-3xl p-2"
         >
           <div
             id="terminal-concole-nav"

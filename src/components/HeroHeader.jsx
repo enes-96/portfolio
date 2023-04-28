@@ -11,6 +11,7 @@ const TITLES = [
 const HeroHeader = () => {
   const [titleIndex, setTitleIndex] = useState(0);
   const [scrolled, setScrolled] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -27,6 +28,12 @@ const HeroHeader = () => {
   const handleScroll = () => {
     setScrolled(window.scrollY > 200);
   };
+
+  function handleCopyClipboard() {
+    navigator.clipboard.writeText("seyitoffice@gmail.com");
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
+  }
 
   return (
     <section id="about" className="relative ">
@@ -69,13 +76,15 @@ const HeroHeader = () => {
           </defs>
         </svg>
       </div>
-      <a
-        href="google.com"
+
+      <p
+        onClick={handleCopyClipboard}
         id="email-link"
-        className="absolute text-2xl left-40 "
+        className="absolute text-2xl left-40 cursor-default"
       >
-        seyitoffice@gmail.com
-      </a>
+        {isCopied ? "copied to your clipboard!" : "seyitoffice@gmail.com"}
+      </p>
+
       <svg
         id="email-shape"
         width="320"
