@@ -12,10 +12,13 @@ import {
 
 function Skill() {
   return (
-    <section id="skill" className=" w-3/4  m-auto ">
+    <section id="skill" className=" w-3/4  m-auto  bg-black ">
       <h2 className=" text-8xl mb-8">Skill</h2>
-      <div id="terminal" className=" border-2 border-gray-800  rounded-3xl ">
-        <div className="grid grid-cols-3 items-center ">
+      <div
+        id="terminal"
+        className=" border-2 border-gray-800  rounded-3xl relative"
+      >
+        <div className="grid grid-cols-3 items-center rounded-t-2xl ">
           <div id="dots" className=" flex items-center gap-2 m-7 ">
             <div
               className=" h-5 w-5 bg-red-500 rounded-full"
@@ -30,10 +33,11 @@ function Skill() {
               id="dot-green"
             ></div>
           </div>
-          <p className="">Skill.jsx - portfolio - Visual Studio Code</p>
-          <div></div>
+          <p className="2xl:text-lg xl:text-md sm:text-sm text-left 2xl:col-span-1 sm:col-span-2  ">
+            Skill.jsx - portfolio - Visual Studio Code
+          </p>
         </div>
-        <div className="w-full h-6 bg-zinc-900  flex gap-4 text-sm items-center px-4 py-3">
+        <div className=" w-full h-6 bg-zinc-900  flex gap-4 sm:text-xs   md:text-sm items-center px-4 py-3">
           <p>File</p>
           <p>Edit</p>
           <p>Selection</p>
@@ -43,10 +47,13 @@ function Skill() {
           <p>Terminal</p>
           <p>Help</p>
         </div>
-        <div id="tabs" className="flex items-center h-12 w-full bg-slate-800  ">
-          <div className="h-full bg-slate-900 p-4 flex items-center gap-2 rounded-l-md">
+        <div
+          id="tabs"
+          className="flex items-center h-12  bg-slate-800 overflow-scroll  xl:text-base md:text-md sm:text-sm "
+        >
+          <div className="h-full  bg-slate-900 p-4 flex items-center gap-2 rounded-l-md">
             <FaJsSquare className="text-yellow-400 text-md" />
-            <p>script.js</p>
+            <p className="">script.js</p>
           </div>
           <div className="h-full bg-gray-800 flex items-center gap-3 p-4">
             <div className="flex items-center gap-2">
@@ -64,16 +71,16 @@ function Skill() {
             <p>main.css</p>
           </div>
           <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
-            <SiWebpack className=" text-sky-400 text-md" />
-            <p>webpack-config.js</p>
+            <SiWebpack className=" text-sky-400 text-md " />
+            <p className=" whitespace-nowrap ">webpack-config.js</p>
           </div>
           <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <SiJest className=" text-amber-400 text-md" />
-            <p>jest-config.js</p>
+            <p className=" whitespace-nowrap">jest-config.js</p>
           </div>
           <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <SiTailwindcss className=" text-cyan-400 text-md" />
-            <p>tailwind-config.js</p>
+            <p className=" whitespace-nowrap">tailwind-config.js</p>
           </div>
           <div className="h-full bg-slate-900 p-4 flex items-center gap-2">
             <FaGitAlt className=" text-orange-400 text-md" />
@@ -81,8 +88,11 @@ function Skill() {
           </div>
         </div>
         <ul id="code" className="pt-4 p-8 ">
-          <div className="flex gap-8 justify-center" id="terminal-wrapper">
-            <div className="" id="left-terminal">
+          <div
+            className="xl:flex md:block  justify-left sm:text-sm"
+            id="terminal-wrapper"
+          >
+            <div className="xl:w-1/2 md:w-full" id="left-terminal">
               <li className="mb-4 ">
                 <span className="text-red-500">Import</span> Skill
                 <span className="text-red-500"> from</span>
@@ -143,7 +153,7 @@ function Skill() {
               </li>
             </div>
             <div
-              className="border-l-2 pl-8 border-gray-800"
+              className="xl:border-l-2 xl:pl-8 md:bordel md:pl-0 border-gray-800 xl:w-1/2 md:w-full"
               id="right-terminal"
             >
               <li className="mb-4">
@@ -208,7 +218,7 @@ function Skill() {
         </ul>
         <div
           id="terminal-console"
-          className="w-full bg-slate-900 rounded-b-3xl p-2"
+          className="w-full bg-slate-900 rounded-b-3xl p-2  xl:text-base sm:text-sm"
         >
           <div
             id="terminal-concole-nav"

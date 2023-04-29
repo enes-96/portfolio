@@ -16,12 +16,14 @@ export default function Navbar() {
   function handleItemClick(itemId) {
     const section = document.getElementById(itemId);
     if (section) {
-      // Wait for the scroll animation to complete before updating selectedItemId
+      const sectionTop = section.offsetTop;
+      window.scrollTo({
+        top: sectionTop - 110,
+        behavior: "smooth",
+      });
       setTimeout(() => setSelectedItemId(itemId), 500);
-      section.scrollIntoView({ behavior: "smooth" });
     }
   }
-
   function handleMouseEnter(item) {
     setIsMouseEnter(item);
   }
@@ -86,20 +88,10 @@ export default function Navbar() {
 
   return (
     <header
-      className=" z-40 text-xl flex items-center justify-between  mb-12 sticky top-4 w-3/4 m-auto"
+      className="z-40 sm:text-lg md:text-xl 2xl:text-2xl flex items-center justify-center mb-14 sticky top-4 w-4/5 m-auto transition-all duration-300"
       onMouseMove={handleMouseMove}
     >
-      <div
-        id="logo"
-        className={`text-4xl font-bold w-20 h-20 flex justify-center items-center rounded-md transition-all duration-300 ${
-          scrolled ? "opacity-0" : ""
-        }`}
-      >
-        <h2 className="text-center">
-          EE<span className="text-blue-600">.</span>
-        </h2>
-      </div>
-      <ul className=" px-4 py-4 flex rounded-full items-center justify-between bg-zinc-900  text-zinc-500 cursor-default overflow-hidden ">
+      <ul className="  sm:p-3 md:p-4 flex rounded-full items-center justify-between bg-zinc-900  text-zinc-500 cursor-default overflow-hidden gap-20">
         {NAVBAR_ITEMS.map((item) => {
           const isSelected = selectedItemId === item.id;
           const isMouseOver = isMouseEnter === item.id;

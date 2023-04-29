@@ -90,9 +90,6 @@ img {
   gap: 1.2px;
 }
 #link-icon-wrapper-right {
-  height: 100px;
-  width: 100px;
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   top: 660px;
@@ -103,15 +100,12 @@ img {
   grid-column: 2 / 2;
 }
 #email-link {
-  position: absolute;
   font-family: "Baloo 2", cursive;
   top: 700px;
   color: #fff;
 }
 #email-shape {
-  position: absolute;
   top: 740px;
-  left: 160px;
   transform: rotate(2deg);
 }
 #link-icon-shape {
