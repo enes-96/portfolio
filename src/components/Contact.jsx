@@ -36,7 +36,7 @@ function Contact() {
             <a
               href="mailto:enes.devinfo@gmail.com"
               id="email-wrapper"
-              className=" 2xl:p-11 2xl:text-5xl xl:p-8 xl:text-2xl md:text-xl md:p-6 rounded-full text-right "
+              className=" 2xl:p-11 2xl:text-5xl xl:p-8 xl:text-2xl md:text-xl md:p-6 sm:text-lg sm:p-4 rounded-full text-right "
             >
               Click to email me
             </a>
