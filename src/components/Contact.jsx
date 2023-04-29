@@ -42,8 +42,8 @@ function Contact() {
             </a>
           </div>
         </div>
-        <div className="2xl:text-4xl xl:text-3xl md:text-2xl flex  xl:flex-row md:gap-16   sm:flex-col text-slate-200  xl:justify-between w-full my-24 ">
-          <div className="xl:gap-y-24 xl:grid text-zinc-600 md:flex md:justify-between ">
+        <div className="2xl:text-4xl xl:text-3xl md:text-2xl sm:text-xl flex  xl:flex-row md:gap-16    sm:flex-col text-slate-200  xl:justify-between w-full my-24 ">
+          <div className="xl:gap-y-14 xl:grid text-zinc-600 sm:flex sm:justify-between  sm:mb-14">
             <p onClick={handlePhoneCall}>+43 681 8187 7895</p>
             <p className="">
               Local Time:{" "}
