@@ -4,8 +4,12 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        mobileImg: "32rem", // adjust the value to your desired height
+        mobileImg: "29rem",
+        tinyImg: "32rem", // adjust the value to your desired height
         desktopImg: "52rem",
+      },
+      screens: {
+        custom: { max: "640px" },
       },
     },
   },

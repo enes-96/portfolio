@@ -21,9 +21,9 @@ function Contact() {
       id="contact"
       className="h-screen w-3/4  m-auto mt-8 grid place-items-center"
     >
-      <div className=" text-zinc-200 p-10 rounded-3xl grid place-items-center md:bg-black sm:bg-amber-500">
+      <div className=" text-zinc-200 p-10 rounded-3xl grid place-items-center ">
         <div className="  flex justify-between items-center ">
-          <h2 className="2xl:text-9xl xl:text-7xl lg:text-6xl md:text-4xl sm:text-4xl  w-1/2 font-semibold ">
+          <h2 className="2xl:text-9xl xl:text-8xl lg:text-7xl md:text-4xl sm:text-4xl  w-1/2 font-semibold ">
             Contact
           </h2>
           <div className="w-1/2 flex flex-col">

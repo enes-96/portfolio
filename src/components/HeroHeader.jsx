@@ -39,7 +39,7 @@ const HeroHeader = () => {
     <section id="about" className="relative">
       <div
         id="link-icon-wrapper-right"
-        className="xl:grid sm:hidden h-24 2xl:text-5xl md:text-4xl absolute flex gap-6 text-slate-200"
+        className="xl:grid sm:hidden custom:hidden h-24 2xl:text-5xl md:text-4xl absolute flex gap-6 text-slate-200"
       >
         <a
           href="https://github.com/enes-96"
@@ -94,14 +94,14 @@ const HeroHeader = () => {
       <p
         onClick={handleCopyClipboard}
         id="email-link"
-        className={`2xl:text-2xl 2xl:left-40 xl:left-32 cursor-default absolute xl:text-xl xl:block sm:hidden `}
+        className={`2xl:text-2xl 2xl:left-40 xl:left-32 cursor-default absolute xl:text-xl xl:block sm:hidden custom:hidden `}
       >
         {isCopied ? "copied to your clipboard!" : "enes.devinfo@gmail.com"}
       </p>
 
       <svg
         id="email-shape"
-        className="absolute 2xl:left-40 xl:left-32"
+        className="absolute 2xl:left-40 xl:left-32 custom:hidden"
         width="320"
         height="30"
         viewBox="0 0 195 14"
@@ -133,7 +133,7 @@ const HeroHeader = () => {
         </defs>
       </svg>
       <div className="w-full flex justify-center text-3xl mb-4 font-medium">
-        <h2 className="">
+        <h2 className="text-center">
           <Typewriter
             options={{
               strings: [TITLES[titleIndex]],
@@ -144,24 +144,23 @@ const HeroHeader = () => {
           />
         </h2>
       </div>
-      <h1 className="text-8xl text-center mb-4">ENES EREN</h1>
+      <h1 className="md:text-8xl sm:text-6xl custom:text-5xl text-center mb-4">
+        ENES EREN
+      </h1>
       <h3 className="text-center    text-xl text-zinc-500">Based in Vienna</h3>
       <div className="grid place-items-center mb-6 ">
-        <div
-          id="img-potrait"
-          className={`grid place-items-center overflow-hidden  rounded-t-full relative`}
-        >
+        <div id="img-potrait" className={`w-full h-screen flex justify-center`}>
           <img
             src="https://images.unsplash.com/photo-1637140945341-f28ada987326?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
             alt=""
-            className={` sm:h-mobileImg xl:h-desktopImg transition-all duration-1000 absolute  ${
+            className={` custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute  ${
               scrolled ? " opacity-0" : ""
             }`}
           />
           <img
             src="https://images.unsplash.com/photo-1634848860108-6d8368f5a0b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
             alt=""
-            className={`sm:h-mobileImg xl:h-desktopImg transition-all duration-1000  absolute  ${
+            className={`custom:h-mobileImg sm:h-tinyImg xl:h-desktopImg transition-all duration-1000  absolute  ${
               scrolled ? "" : "opacity-0"
             }`}
           />

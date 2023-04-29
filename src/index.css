@@ -73,15 +73,6 @@ img {
 }
 /*------------*/
 
-#img-potrait {
-  height: 800px;
-  width: 600px;
-  background-position: bottom;
-  background-size: 500px;
-  background-repeat: no-repeat;
-  z-index: 1;
-  background-attachment: fixed;
-}
 /*************************************/
 #terminal {
   font-family: "Source Code Pro", monospace;

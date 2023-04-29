@@ -13,17 +13,17 @@ import {
 function Skill() {
   return (
     <section id="skill" className=" w-3/4  m-auto  bg-black ">
-      <h2 className=" 2xl:text-8xl xl:text-7xl md:text-6xl sm:text-5xl mb-8 transition-all duration-1000">
+      <h2 className=" 2xl:text-8xl xl:text-7xl md:text-6xl sm:text-5xl custom:text-4xl mb-8 transition-all duration-1000">
         Skill
       </h2>
       <div
         id="terminal"
         className=" border-2 border-gray-800  rounded-3xl relative"
       >
-        <div className="grid grid-cols-3 items-center rounded-t-2xl ">
+        <div className=" custom:flex grid grid-cols-3 items-center rounded-t-2xl pr-2">
           <div id="dots" className=" flex items-center gap-2 m-7 ">
             <div
-              className=" h-5 w-5 bg-red-500 rounded-full"
+              className=" h-5 w-5  bg-red-500 rounded-full"
               id="dot-red"
             ></div>
             <div
@@ -35,11 +35,11 @@ function Skill() {
               id="dot-green"
             ></div>
           </div>
-          <p className="2xl:text-lg xl:text-md sm:text-sm text-left 2xl:col-span-1 sm:col-span-2  ">
+          <p className="2xl:text-lg xl:text-md sm:text-sm custom:text-xs custom:col-span-2 text-left 2xl:col-span-2 sm:col-span-2  ">
             Skill.jsx - portfolio - Visual Studio Code
           </p>
         </div>
-        <div className=" w-full h-6 bg-zinc-900  flex gap-4 sm:text-xs   md:text-sm items-center px-4 py-3">
+        <div className=" w-full h-6 bg-zinc-900  flex gap-4 sm:text-xs   md:text-sm items-center px-4 py-3 overflow-scroll">
           <p>File</p>
           <p>Edit</p>
           <p>Selection</p>
@@ -220,11 +220,11 @@ function Skill() {
         </ul>
         <div
           id="terminal-console"
-          className="w-full bg-slate-900 rounded-b-3xl p-2  xl:text-base sm:text-sm"
+          className="w-full bg-slate-900 rounded-b-3xl p-2  xl:text-base sm:text-sm overflow-scroll"
         >
           <div
             id="terminal-concole-nav"
-            className="flex items-center justify-between text-sm gap-2 p-2"
+            className="flex items-center justify-between text-sm gap-2 p-2 "
           >
             <div className="flex">
               <p className="px-2">PROBLEMS</p>
@@ -241,19 +241,21 @@ function Skill() {
               <VscChromeClose className="text-md" />
             </div>
           </div>
-          <p className="pl-4 ">
+          <p className="pl-4 w-96">
             <span className="text-green-400">enes@eren:</span>
             <span className="text-blue-400">~/portfolio</span>$
             <span className="pl-2"> git add .</span>
           </p>
-          <p className="pl-4 ">
+          <p className="pl-4 w-96">
             <span className="text-green-400">enes@eren:</span>
             <span className="text-blue-400">~/portfolio</span>$
-            <span className="pl-2"> git commit -m"creating portfolio"</span>
+            <span className="pl-2 "> git commit -m"creating portfolio"</span>
           </p>
-          <p className="pl-4">
-            <p>[main 345ff234] creating portfolio</p>
-            <p>4 files changed, 125 insertions(+),65 deletions(-)</p>
+          <p className="pl-4 w-96">
+            <p className="w-96 ">[main 345ff234] creating portfolio</p>
+            <p className="w-96">
+              4 files changed, 125 insertions(+),65 deletions(-)
+            </p>
           </p>
           <p className="pl-4 flex">
             <div>
@@ -261,8 +263,8 @@ function Skill() {
               <span className="text-blue-400">~/portfolio</span>$
             </div>
             <div className="flex items-center ">
-              <span className="pl-4"> git push origin main</span>
-              <span className=" w-1 h-4 ml-1 bg-white"></span>
+              <span className="pl-4  w-96"> git push origin main</span>
+              <span className=" w-1  h-4 ml-1 bg-white"></span>
             </div>
           </p>
         </div>
