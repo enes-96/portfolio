@@ -13,7 +13,9 @@ import {
 function Skill() {
   return (
     <section id="skill" className=" w-3/4  m-auto  bg-black ">
-      <h2 className=" text-8xl mb-8">Skill</h2>
+      <h2 className=" 2xl:text-8xl xl:text-7xl md:text-6xl sm:text-5xl mb-8 transition-all duration-1000">
+        Skill
+      </h2>
       <div
         id="terminal"
         className=" border-2 border-gray-800  rounded-3xl relative"

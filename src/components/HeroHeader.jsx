@@ -168,7 +168,7 @@ const HeroHeader = () => {
         </div>
       </div>
       <div>
-        <h5 className="text-4xl w-3/4 m-auto mb-10 leading-loose">
+        <h5 className="2xl:text-4xl xl:text-3xl md:text-2xl sm:text-md w-3/4 m-auto mb-10 leading-loose">
           At 19 years old, I'm a self-taught front-end developer with a passion
           for Web Development. I approach every project with a desire to learn
           and grow, and I'm always exploring new technologies to enhance my
