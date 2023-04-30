@@ -19,7 +19,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="h-screen w-3/4  m-auto mt-8 grid place-items-center"
+      className="h-screen w-3/4   m-auto mt-8 grid place-items-center"
     >
       <div className=" text-zinc-200 p-10 rounded-3xl grid place-items-center ">
         <div className="  sm:flex justify-between items-center ">

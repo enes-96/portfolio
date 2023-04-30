@@ -16,6 +16,9 @@
 *::-webkit-scrollbar-thumb {
   scrollbar-color: black red;
 }
+html {
+  background-color: black;
+}
 #root {
   font-family: "Montserrat", sans-serif;
   transition: all;
