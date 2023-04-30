@@ -13,6 +13,13 @@ export default function Cursor() {
       const keyframes = {
         transform: `translate(${x}px,${y}px)`,
       };
+      const target = e.target;
+      if (target.tagName === "A" || target.getAttribute("onclick")) {
+        trailer.style.backgroundColor = "transparent";
+        trailer.style.border = "2px solid white";
+      } else {
+        trailer.style.backgroundColor = "white";
+      }
       trailer.animate(keyframes, {
         duration: 800,
         fill: "forwards",
@@ -27,7 +34,7 @@ export default function Cursor() {
   }, []);
 
   return (
-    <div>
+    <div className="transition-all duration-1000">
       <div
         ref={TrailerRef}
         id="trailer"
