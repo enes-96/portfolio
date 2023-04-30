@@ -6,7 +6,7 @@ import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 function App() {
   return (
-    <div className="App text-white w-full overflow-x-hidden ">
+    <div className="App text-white custom:overflow-x-hidden sm:overscroll-auto  ">
       <Cursor />
       <Navbar />
       <HeroHeader />

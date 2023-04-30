@@ -36,7 +36,7 @@ const HeroHeader = () => {
   }
 
   return (
-    <section id="about" className="relative">
+    <section id="about" className="relative ">
       <div
         id="link-icon-wrapper-right"
         className="xl:grid sm:hidden custom:hidden h-24 2xl:text-5xl md:text-4xl absolute flex gap-6 text-slate-200"
@@ -167,7 +167,7 @@ const HeroHeader = () => {
         </div>
       </div>
       <div>
-        <h5 className="2xl:text-4xl xl:text-3xl md:text-2xl sm:text-md w-3/4 m-auto mb-10 leading-loose">
+        <h5 className="2xl:text-4xl xl:-top-0 xl:text-3xl lg:-top-28 md:text-2xl md:-top-56 md:leading-relaxed sm:text-2xl sm:-top-28 sm:leading-relaxed w-3/4 m-auto mb-10 2xl:leading-loose relative custom:text-2xl custom:-top-56 custom:leading-relaxed ">
           At 19 years old, I'm a self-taught front-end developer with a passion
           for Web Development. I approach every project with a desire to learn
           and grow, and I'm always exploring new technologies to enhance my

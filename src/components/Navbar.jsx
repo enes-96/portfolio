@@ -88,10 +88,10 @@ export default function Navbar() {
 
   return (
     <header
-      className="z-40 sm:text-lg md:text-xl 2xl:text-2xl flex items-center justify-center mb-14 sticky top-4 sm:w-4/5 m-auto transition-all duration-300"
+      className="z-40 sm:text-lg md:text-xl 2xl:text-2xl flex items-center justify-center mb-14 sm:sticky custom:relative  top-4 sm:w-4/5 m-auto transition-all duration-300"
       onMouseMove={handleMouseMove}
     >
-      <ul className=" custom:p-2 custom:gap-0  sm:p-3 md:p-4 flex rounded-full items-center justify-between bg-zinc-900  text-zinc-500 cursor-default overflow-hidden gap-20">
+      <ul className=" custom:p-2 custom:gap-0  sm:p-3 md:p-4 flex rounded-full items-center justify-between bg-zinc-800  text-zinc-500 cursor-default overflow-hidden gap-20">
         {NAVBAR_ITEMS.map((item) => {
           const isSelected = selectedItemId === item.id;
           const isMouseOver = isMouseEnter === item.id;

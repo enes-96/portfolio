@@ -13,7 +13,7 @@ import {
 function Skill() {
   return (
     <section id="skill" className=" w-3/4  m-auto  bg-black ">
-      <h2 className=" 2xl:text-8xl xl:text-7xl md:text-6xl sm:text-5xl custom:text-4xl mb-8 transition-all duration-1000">
+      <h2 className=" 2xl:text-8xl xl:text-7xl md:text-6xl sm:text-5xl custom:text-5xl mb-8 transition-all duration-1000">
         Skill
       </h2>
       <div
@@ -224,12 +224,12 @@ function Skill() {
         >
           <div
             id="terminal-concole-nav"
-            className="flex items-center justify-between text-sm gap-2 p-2 "
+            className="flex items-center justify-between text-sm gap-24 p-2 min-w-fit"
           >
             <div className="flex">
               <p className="px-2">PROBLEMS</p>
               <p className="px-2">OUTPUT</p>
-              <p className="px-2">DEBUG CONSOLE</p>
+              <p className="px-2 w-32">DEBUG CONSOLE</p>
               <p className="px-2 border-b-2 border-gray-400">TERMINAL</p>
             </div>
             <div className="flex items-center gap-1">
@@ -263,8 +263,7 @@ function Skill() {
               <span className="text-blue-400">~/portfolio</span>$
             </div>
             <div className="flex items-center ">
-              <span className="pl-4  w-96"> git push origin main</span>
-              <span className=" w-1  h-4 ml-1 bg-white"></span>
+              <span className="pl-4 w-screen"> git push origin main |</span>
             </div>
           </p>
         </div>
