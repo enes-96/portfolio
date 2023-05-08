@@ -149,19 +149,15 @@ const HeroHeader = () => {
       </h1>
       <h3 className="text-center    text-xl text-zinc-500">Based in Vienna</h3>
       <div className="grid place-items-center mb-6 ">
-        <div id="img-potrait" className={`w-full h-screen flex justify-center`}>
+        <div
+          id="img-potrait"
+          className={`w-full h-screen  flex justify-center`}
+        >
           <img
-            src="https://images.unsplash.com/photo-1637140945341-f28ada987326?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+            src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
             alt=""
-            className={` custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute  ${
-              scrolled ? " opacity-0" : ""
-            }`}
-          />
-          <img
-            src="https://images.unsplash.com/photo-1634848860108-6d8368f5a0b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-            alt=""
-            className={`custom:h-mobileImg sm:h-tinyImg xl:h-desktopImg transition-all duration-1000  absolute  ${
-              scrolled ? "" : "opacity-0"
+            className={` custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute   ${
+              scrolled ? " rotate-6  " : "rotate-0"
             }`}
           />
         </div>
