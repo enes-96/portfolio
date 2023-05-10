@@ -84,18 +84,10 @@ function Contact() {
             >
               Dribble
             </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href=" https://dribbble.com/eneseren"
-            >
+            <a target="_blank" rel="noopener noreferrer" href=" ">
               Blog
             </a>{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href=" https://dribbble.com/eneseren"
-            >
+            <a target="_blank" rel="noopener noreferrer" href=" ">
               CV
             </a>{" "}
           </div>
