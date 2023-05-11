@@ -94,7 +94,7 @@ const HeroHeader = () => {
       <p
         onClick={handleCopyClipboard}
         id="email-link"
-        className={`2xl:text-2xl 2xl:left-40 xl:left-32 cursor-default absolute xl:text-xl xl:block sm:hidden custom:hidden `}
+        className={`2xl:text-2xl 2xl:left-40 xl:left-32   cursor-default absolute xl:text-xl xl:block sm:hidden custom:hidden `}
       >
         {isCopied ? "copied to your clipboard!" : "enes.devinfo@gmail.com"}
       </p>

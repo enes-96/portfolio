@@ -87,7 +87,11 @@ function Contact() {
             <a target="_blank" rel="noopener noreferrer" href=" ">
               Blog
             </a>{" "}
-            <a target="_blank" rel="noopener noreferrer" href=" ">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1ne2bqKaqVgVVXoKGQsPkxzxMw8URnYUT/view?usp=sharing"
+            >
               CV
             </a>{" "}
           </div>
