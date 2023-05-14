@@ -84,16 +84,22 @@ function Contact() {
             >
               Dribble
             </a>
-            <a target="_blank" rel="noopener noreferrer" href=" ">
-              Blog
-            </a>{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1ne2bqKaqVgVVXoKGQsPkxzxMw8URnYUT/view?usp=sharing"
+              href=" "
+              onClick={() => alert("under construction")}
+            >
+              Blog
+            </a>{" "}
+            <p
+              target="_blank"
+              rel="noopener noreferrer"
+              href="#"
+              onClick={() => alert("my cv is not done yet :(")}
             >
               CV
-            </a>{" "}
+            </p>{" "}
           </div>
         </div>
       </div>
