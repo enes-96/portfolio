@@ -26,7 +26,7 @@ const HeroHeader = () => {
   }, []);
 
   const handleScroll = () => {
-    setScrolled(window.scrollY > 200);
+    setScrolled(window.scrollY > 300);
   };
 
   function handleCopyClipboard() {
@@ -153,13 +153,19 @@ const HeroHeader = () => {
           id="img-potrait"
           className={`w-full h-screen  flex justify-center`}
         >
-          <img
-            src="https://images.unsplash.com/photo-1481819613568-3701cbc70156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-            alt=""
-            className={` custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute   ${
-              scrolled ? " rotate-6  " : "rotate-0"
-            }`}
-          />
+          {scrolled ? (
+            <img
+              src="https://images.unsplash.com/photo-1681836695952-1f8073a7938d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              alt=""
+              className="custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute blur-sm"
+            />
+          ) : (
+            <img
+              src="https://images.unsplash.com/photo-1681836695952-1f8073a7938d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              alt=""
+              className="custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute "
+            />
+          )}
         </div>
       </div>
       <div>
