@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import websiteImg from "./images/websiteimg.png"; // Import the image
 
 const TITLES = [
   "Front End Developer",
@@ -155,14 +156,14 @@ const HeroHeader = () => {
         >
           {scrolled ? (
             <img
-              src="https://images.unsplash.com/photo-1681836695952-1f8073a7938d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-              alt=""
+            src={websiteImg} // Use your imported image
+            alt=""
               className="custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute blur-sm"
             />
           ) : (
             <img
-              src="https://images.unsplash.com/photo-1681836695952-1f8073a7938d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-              alt=""
+            src={websiteImg} // Use your imported image
+            alt=""
               className="custom:h-mobileImg  sm:h-tinyImg  xl:h-desktopImg transition-all duration-1000 absolute "
             />
           )}
