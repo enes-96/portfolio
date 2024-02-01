@@ -11,6 +11,7 @@ import {
 } from "react-icons/vsc";
 import video1 from "./videos/Untitled.mp4";
 import video2 from "./videos/un2.mp4";
+import video3 from "./videos/video2.mp4";
 
 function Skill() {
   return (
@@ -280,7 +281,7 @@ function Skill() {
          tut mir leid das du mein video nicht sehen kannst :( 
         </video>
         <video width="340" height="200" controls>
-          <source src={video1} type="video/mp4" />
+          <source src={video3} type="video/mp4" />
          tut mir leid das du mein video nicht sehen kannst :( 
         </video>
         </div>
