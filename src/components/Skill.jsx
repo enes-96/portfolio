@@ -9,6 +9,7 @@ import {
   VscEllipsis,
   VscAdd,
 } from "react-icons/vsc";
+import video1 from "./videos/Untitled.mp4"
 
 function Skill() {
   return (
@@ -268,6 +269,21 @@ function Skill() {
           </p>
         </div>
       </div>
+      <div class="flex justify-between flex-wrap">
+        <video width="340" height="200" controls rounded-md>
+          <source src={video1} type="video/mp4" />
+          tut mir leid das du mein video nicht sehen kannst :( 
+        </video>
+        <video width="340" height="20ß" controls>
+          <source src={video1} type="video/mp4" />
+         tut mir leid das du mein video nicht sehen kannst :( 
+        </video>
+        <video width="340" height="200" controls>
+          <source src={video1} type="video/mp4" />
+         tut mir leid das du mein video nicht sehen kannst :( 
+        </video>
+        </div>
+      
     </section>
   );
 }
