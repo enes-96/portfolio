@@ -4,6 +4,7 @@ const NAVBAR_ITEMS = [
   { id: "about", label: "About" },
   { id: "skill", label: "Skill" },
   { id: "contact", label: "Contact" },
+  
 ];
 
 export default function Navbar() {

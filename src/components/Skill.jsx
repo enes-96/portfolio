@@ -271,7 +271,7 @@ function Skill() {
           </p>
         </div>
       </div>
-      <div class="flex justify-between flex-wrap">
+      <div class="flex justify-between flex-wrap mt-12">
         <video width="340" height="200" controls rounded-md>
           <source src={video1} type="video/mp4" />
           tut mir leid das du mein video nicht sehen kannst :( 
